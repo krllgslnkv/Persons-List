@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		C7CD6A9F273AFE1200E955CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6A9E273AFE1200E955CA /* AppDelegate.swift */; };
 		C7CD6AA1273AFE1200E955CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6AA0273AFE1200E955CA /* SceneDelegate.swift */; };
-		C7CD6AA3273AFE1200E955CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6AA2273AFE1200E955CA /* ViewController.swift */; };
 		C7CD6AA6273AFE1200E955CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CD6AA4273AFE1200E955CA /* Main.storyboard */; };
 		C7CD6AA8273AFE1300E955CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CD6AA7273AFE1300E955CA /* Assets.xcassets */; };
 		C7CD6AAB273AFE1300E955CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CD6AA9273AFE1300E955CA /* LaunchScreen.storyboard */; };
+		C7CD6AB5273B0BBB00E955CA /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6AB4273B0BBB00E955CA /* PersonsTableViewController.swift */; };
+		C7CD6AB7273B0FC300E955CA /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6AB6273B0FC200E955CA /* Persons.swift */; };
+		C7CD6AB9273BCD9900E955CA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6AB8273BCD9900E955CA /* DataManager.swift */; };
+		C7CD6ABB273BD70800E955CA /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6ABA273BD70800E955CA /* ContactViewController.swift */; };
+		C7CD6ABD273BE73000E955CA /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD6ABC273BE73000E955CA /* SectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7CD6A9B273AFE1200E955CA /* Persons List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CD6A9E273AFE1200E955CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CD6AA0273AFE1200E955CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7CD6AA2273AFE1200E955CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7CD6AA5273AFE1200E955CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7CD6AA7273AFE1300E955CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7CD6AAA273AFE1300E955CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7CD6AAC273AFE1300E955CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CD6AB4273B0BBB00E955CA /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
+		C7CD6AB6273B0FC200E955CA /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		C7CD6AB8273BCD9900E955CA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C7CD6ABA273BD70800E955CA /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		C7CD6ABC273BE73000E955CA /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		C7CD6A9D273AFE1200E955CA /* Persons List */ = {
 			isa = PBXGroup;
 			children = (
-				C7CD6A9E273AFE1200E955CA /* AppDelegate.swift */,
-				C7CD6AA0273AFE1200E955CA /* SceneDelegate.swift */,
-				C7CD6AA2273AFE1200E955CA /* ViewController.swift */,
-				C7CD6AA4273AFE1200E955CA /* Main.storyboard */,
-				C7CD6AA7273AFE1300E955CA /* Assets.xcassets */,
-				C7CD6AA9273AFE1300E955CA /* LaunchScreen.storyboard */,
-				C7CD6AAC273AFE1300E955CA /* Info.plist */,
+				C7CD6AC6273C621C00E955CA /* Config */,
+				C7CD6AC4273C61F200E955CA /* View */,
+				C7CD6AC3273C61E300E955CA /* Services */,
+				C7CD6AB6273B0FC200E955CA /* Persons.swift */,
+				C7CD6AC2273C61C000E955CA /* Controllers */,
+				C7CD6AC5273C620200E955CA /* Resources */,
 			);
 			path = "Persons List";
+			sourceTree = "<group>";
+		};
+		C7CD6AC2273C61C000E955CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD6AB4273B0BBB00E955CA /* PersonsTableViewController.swift */,
+				C7CD6ABA273BD70800E955CA /* ContactViewController.swift */,
+				C7CD6ABC273BE73000E955CA /* SectionTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7CD6AC3273C61E300E955CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD6AB8273BCD9900E955CA /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C7CD6AC4273C61F200E955CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD6AA9273AFE1300E955CA /* LaunchScreen.storyboard */,
+				C7CD6AA4273AFE1200E955CA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7CD6AC5273C620200E955CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD6AA7273AFE1300E955CA /* Assets.xcassets */,
+				C7CD6AAC273AFE1300E955CA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C7CD6AC6273C621C00E955CA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C7CD6A9E273AFE1200E955CA /* AppDelegate.swift */,
+				C7CD6AA0273AFE1200E955CA /* SceneDelegate.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CD6AA3273AFE1200E955CA /* ViewController.swift in Sources */,
+				C7CD6AB7273B0FC300E955CA /* Persons.swift in Sources */,
+				C7CD6AB9273BCD9900E955CA /* DataManager.swift in Sources */,
 				C7CD6A9F273AFE1200E955CA /* AppDelegate.swift in Sources */,
+				C7CD6AB5273B0BBB00E955CA /* PersonsTableViewController.swift in Sources */,
 				C7CD6AA1273AFE1200E955CA /* SceneDelegate.swift in Sources */,
+				C7CD6ABB273BD70800E955CA /* ContactViewController.swift in Sources */,
+				C7CD6ABD273BE73000E955CA /* SectionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 839DXVMN6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Persons List/Info.plist";
+				INFOPLIST_FILE = "Persons List/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 839DXVMN6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Persons List/Info.plist";
+				INFOPLIST_FILE = "Persons List/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
