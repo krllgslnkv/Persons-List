@@ -37,11 +37,9 @@ class SectionTableViewController: UITableViewController {
         case 0:
             content.image = UIImage(systemName: "phone")
             content.text = String(person.phone)
-        case 1:
+        default:
             content.image = UIImage(systemName: "tray")
             content.text = person.email
-        default:
-            break
         }
         
         cell.contentConfiguration = content
